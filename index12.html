@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Proyecto con Javascript</title>
+	<!--De esta manera cargo el css -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/green.css" id="theme">
+	
+	<!-- Slider -->
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  	
+  </script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+<!-- moment js cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.3/moment.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.3/locale/es.min.js"></script>
+<!-- Mis script-->
+  <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div id="changetheme">
+		<div id="togreen"></div>
+		<div id="toblue"></div>
+		<div id="tored"></div>
+	</div>
+	<section id="global">
+		 <!--seccion de cabecera -->
+		<header>
+			<div id="logo"><h1>PROYECTO JS</h1></div>
+			<div class="clearFix"></div>
+			<nav id="menu">
+				<ul>
+					<li><a href="#">INICIO</a> </li>
+					<li><a href="#">RELOJ</a></li>
+					<li><a href="#">SOBRE MI</a></li>
+					<li><a href="#">CONTACTO</a></li>
+				</ul>
+			</nav>
+		</header>
+       <!--slyder -->
+		<div id="slyder"></div>
+		<div class="bxslider">
+ 	 <div><img src="img/hojas.jpg" title="Funky roots"></div>
+ 	 <div><img src="img/rojo.jpg" title="The long and winding road"></div>
+  		<div><img src="img/cielo.jpg" title="Happy trees"></div>
+		</div>
+ <!--seccion de articulos y side bar -->
+		<section id="content">
+			<div id="posts">
+				<article class="post">
+					<h2>Titulo del articulo</h2>
+					<span class="date">Fecha de publicacion</span>
+					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+					<a href="#" class="button-more">Leer mas</a>
+				</article>
+	                <article class="post">
+					<h2>Segundo Articulo</h2>
+					<span class="date">Fecha de publicacion</span>
+					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+					<a href="#" class="button-more">Leer mas</a>
+				</article>
+				<!-- luego se caarga desde json los demas articulos-->
+			</div>
+			<aside id="sidebar">
+				<div id="about">
+					<h4><span>Quien soy</span></h4>
+					<img src="img/caracol.jpg">
+					<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'.</p>
+				</div>
+
+				<div id="login">
+					<h4><span>Identificate</span></h4>
+					<form>
+                     <label for="name">Nombre</label>
+                     <input type="text" name="name">
+
+					<label for="email">Correo</label>
+                     <input type="text" name="email">
+                     <label for="password">Contraseña</label>
+                     <input type="password" name="password">
+
+                     <input type="submit" value="Entrar">
+
+                     </form>
+
+
+				</div>
+			</aside> 
+			<div class="clearFix"></div>
+		</section>
+	</section>
+	<footer>Master de JS</footer>
+	<a href="#" class="subir">Ir al princio de la pagina</a>
+
+</body>
+</html>
